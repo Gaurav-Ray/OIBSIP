@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:"Gilroy";
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    width: 100%;
+    min-height: 100vh;
+}
+
+#header{
+    width: 100%;
+    min-height: 10vh;
+    background-position: top; 
+    background-color: #ffffff;
+}
+
+#top{
+    width: 100%;
+    min-height: 60vh;
+    background-image:url(book.jpg);
+    background-size: cover;
+    background-position: top;
+}
+.hero{
+    position: relative;
+    width: 100%;
+    min-height:inherit;
+    background: rgb(202, 243, 233);
+}
+
+nav{
+    display: flex;
+    width: 84%;
+    margin: auto;
+    padding: 10px 0px;
+    align-items: center;
+    justify-content:space-between;
+}
+
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: red;
+}
+
+
+#overlay{
+    position: relative;
+    width: 100%;
+    min-height: inherit;
+    background-color: rgba(67, 64, 64, 0.104);
+}
+
+#text{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    bottom: 20%;
+    padding: 0 10vw;
+    color: aliceblue;
+}
+
+#text h1{
+   font-size: 6vw;
+   font-weight: 500;
+}
+
+#textright{
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#textright p{
+    font-size: 12px;
+    width: 40%;
+}
+#bottom{
+    width: 100%;
+    min-height: 30vh;
+    background-color: blue; 
+    display: flex;
+}
+
+#b1{
+    padding: 30px;
+    width: 25%;
+    min-height: inherit;
+    background-color: rgb(198, 221, 240);
+}
+
+#b1 p{
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+#b2{
+    width: 25%;
+    min-height: inherit;
+    background-image: url(https://images.unsplash.com/photo-1718524127932-2696e2f59096?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+}
+
+#b3{
+    width: 20%;
+    min-height: inherit;
+    background-color:purple;
+}
+#b3top{
+    width: 100%;
+    min-height: 20vh;
+    padding: 20px;
+    color: #fff;
+    background-color: orangered;
+}
+
+#b3top p{
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+#b3bottom{
+    width: 100%;
+    min-height: 20vh;
+    background-image: url(nature.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#b4{
+    width: 30%;
+    min-height: inherit;
+    padding: 30px;
+    background-color: #444;
+    color: #fff;
+}
+
+.notf{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+ .notf #photo{ 
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-image: url(boys.jpg);
+    background-size: cover;
+
+}
+
+.notf p{
+    width: 86%;
+    font-size: 12px;
+}
+
+@media(max-width: 500px){
+    #overlay #text{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #text h1 {
+        font-size: 10vw;
+    }
+
+    #overlay #text #textright{
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+
+    #overlay #text #textright p{
+        width: initial;
+        margin-top: 20px;
+    }
+
+    #bottom{
+        flex-direction: column;
+        min-height: 20vh;
+    }
+
+    #b1{
+        width: 100%;
+    }
+    #b2{
+        width: 100%;
+        min-height: 40vh;
+    }
+    #b3{
+        flex-direction: column;
+        width: 100%;
+    }
+    #b4{
+        width: 100%;
+    }
+}
